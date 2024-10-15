@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #202020;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, ol, h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.container {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 80px;
+}
+
+div.container ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  div.container {
+    padding: 120px;
+  }
+}
+
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+ul li {
+  display: flex;
+  flex-grow: 1;
+  background-color: #404040;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  width: 130px;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul li.selected {
+  background-color: #065606;
+}
+
+ul li.selected:hover {
+  background-color: #043d04;
+}
+
+ul li:hover {
+  background-color: #363636;
+}
+
+div.total-count {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+div.total-count div {
+  width: 100%;
+  padding: 70px;
+  background-color: #bca4eb;
+  border-radius: 12px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+div.total-count div strong {
+  font-size: 36px;
+  font-weight: 900;
+  color: #392b54;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.total-count div span {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #322251;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 730px) {
+  div.total-count {
+    flex-wrap: wrap;
+  }
+}
+
+div p {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
